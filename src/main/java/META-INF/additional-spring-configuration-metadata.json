@@ -1,0 +1,82 @@
+{"properties": [
+  {
+    "name": "spring.main.allow-circular-references",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.main.allow-circular-references'"
+  },
+  {
+    "name": "springdoc.swagger-ui.path",
+    "type": "java.lang.String",
+    "description": "A description for 'springdoc.swagger-ui.path'"
+  },
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret'"
+  },
+  {
+    "name": "jwt.token-expirationInMs",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.token-expirationInMs'"
+  },
+  {
+    "name": "jwt.token-expirationInMs",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.token-expirationInMs'"
+  },
+  {
+    "name": "jwt.token-expirationInMs",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.token-expirationInMs'"
+  },
+  {
+    "name": "jwt.token-expirationInMs",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.token-expirationInMs'"
+  },
+  {
+    "name": "jwt.token-expirationInMs",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.token-expirationInMs'"
+  },
+  {
+    "name": "jwt.token-expirationInMs",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.token-expirationInMs'"
+  },
+  {
+    "name": "jwt.token-expirationInMs",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.token-expirationInMs'"
+  },
+  {
+    "name": "jwt.token-expirationInMs",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.token-expirationInMs'"
+  },
+  {
+    "name": "spring.datasource.testWhileIdle",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.testWhileIdle'"
+  },
+  {
+    "name": "spring.datasource.validationQuery",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.validationQuery'"
+  },
+  {
+    "name": "jwt.refreshExpirationDateInMs",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.refreshExpirationDateInMs'"
+  },
+  {
+    "name": "management.security.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'management.security.enabled'"
+  },
+  {
+    "name": "spring.boot.admin.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.boot.admin.url'"
+  }
+]}

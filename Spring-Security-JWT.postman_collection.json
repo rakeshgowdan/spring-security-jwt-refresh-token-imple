@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "e2dbd445-e071-48ac-84d0-028a082cea49",
+		"name": "Spring-Security-JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "firstReq",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/v1/home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"v1",
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateRole",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"rakesh\",\r\n    \"password\":\"secret\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/auth/userAuthenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"auth",
+						"userAuthenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllRoles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"rakesh\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/v1/user/role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteByID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/api/v1/userRole/role/27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"v1",
+						"userRole",
+						"role",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uname\":\"user12\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/auth/userAuthenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"auth",
+						"userAuthenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RefreshToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/api/auth/refreshToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"auth",
+						"refreshToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uname\":\"abcc\",\r\n    \"password\":\"1234\",\r\n    \"firstName\":\"abcd\",\r\n    \"lastName\":\"12\",\r\n    \"mailId\":\"user12@testyantra.com\",\r\n    \"mobileNo\":\"1234567899\",\r\n    \"roles\":[\r\n        {\r\n            \"roleId\":\"15\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "current-user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDIzOTc1MjAsImlhdCI6MTY0MjM2MTUyMH0.JACdY1W9VBEFvks_3lSEm7DcDtxCSHCn9H70VsGijog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/auth/currentUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"auth",
+						"currentUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

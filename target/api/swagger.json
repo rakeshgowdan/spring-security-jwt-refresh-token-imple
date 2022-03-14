@@ -1,0 +1,9 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Spring Security with JWT demo",
+    "version" : "v1",
+    "title" : "Spring Security with JWT demo"
+  },
+  "basePath" : "/api"
+}
